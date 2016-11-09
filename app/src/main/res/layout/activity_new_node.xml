@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="@color/colorWhite">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:weightSum="1">
+
+        <TextView
+            android:text="New note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tb"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            android:id="@+id/textView3"
+            android:layout_weight="0.60"
+            android:allowUndo="false"
+            android:layout_marginRight="15dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:text="Title"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorRecyclerView"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:text="More info"
+        android:layout_weight="0.18"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorRecyclerView"
+        android:padding="5dp"
+        android:gravity="top"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/btnAdd"
+        android:cursorVisible="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>
